@@ -1,0 +1,10 @@
+# This is just for local testing the run configuration
+services:
+  relay:
+    build: .
+    ports:
+      # map the host port
+      - "8080:8080"
+    volumes:
+      # map a persitent volume into the container
+      - ./data:/relay/data

@@ -1,0 +1,43 @@
+# This is the configuration that will be deployed.
+#
+# If you want to run this relay for local development, make sure to point
+# docker-compose to a configuration that has your client's hex key in the
+# user_hex_keys array, otherwise the relay will not allow to authenticate
+# and send and receive private direct messages.
+#
+# Until we have a dynamic whitelist for npubs new accounts need to be added
+# manually to this file. Most importantly
+
+# local data stored here so this dir needs a persitent volume in GCE.
+data_directory = "./data/db"
+
+# within docker we allways want to listen on all addresses
+ip_address = "0.0.0.0"
+
+# port can be mapped to any outside port
+port = 8080
+
+# this must be the actual domain name from which we access the service
+hostname = "localhost"
+
+# I guess this one needs to be true if we have tls enabled via GCE
+# locally this fails bcs there is no RealIpHeader present
+chorus_is_behind_a_proxy = false
+
+# tls will be provided by GCE ?
+use_tls = false
+
+# meta
+name = "Bitcredit Relay"
+description = "The dev relay for Bitcredit"
+
+# If this is false no unauthenticated users can connect to the relay
+# but even if it is true, only users with the hex keys in the user_hex_keys
+# array will receive private direct messages.
+open_relay = true
+
+# The hex keys of the users that are allowed to connect to the relay and
+# send and receive private direct messages.
+user_hex_keys = [
+  "7d0f7caf4046a20a2e32b1133cf7969c4be5e629ea3f2ae444d99cc91942edeb",
+]
