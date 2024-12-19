@@ -27,3 +27,9 @@ configuration change.
 
 For now a push to the master branch of this repository should trigger a
 redeploy and therefor a configuration update.
+
+## TODO:
+
+- [ ] add GH action with deploy script
+- [ ] add developer users
+- [ ] dynamically add users without deploy
