@@ -40,4 +40,6 @@ open_relay = true
 # send and receive private direct messages.
 user_hex_keys = [
   "9ba50fe0ce3edabb9f6dd55043d137ce7d80292ec72fdb0c490fad63ad561288", # protom
+  "0c9128297e49952a0cf66484904e2e9bfe6482183c36a77f05f4017c487a73c2",
+  "87604c05df361aced554a2dcfaaa415d128d43cb820cafca02615b3f6c858fe0",
 ]
