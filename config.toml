@@ -39,5 +39,5 @@ open_relay = true
 # The hex keys of the users that are allowed to connect to the relay and
 # send and receive private direct messages.
 user_hex_keys = [
-  "9ba50fe0ce3edabb9f6dd55043d137ce7d80292ec72fdb0c490fad63ad561288",
+  "9ba50fe0ce3edabb9f6dd55043d137ce7d80292ec72fdb0c490fad63ad561288", # protom
 ]
