@@ -28,7 +28,13 @@ configuration change.
 For now a push to the master branch of this repository should trigger a
 redeploy and therefor a configuration update.
 
-## TODO:
+### How the hell do I get my npubs hexkey
+
+After you crated an identity you can lookup the Nostr npub from the get
+identity endpoint. The easiest way to convert it to hex format is using
+an online converter like: <https://lightningk0ala.github.io/nostr-wtf/>.
+
+## TODO
 
 - [ ] add GH action variables and trigger on push/merge
 - [ ] add developer users
