@@ -14,7 +14,7 @@ env:
   GAR_LOCATION: 'europe-west1'
   REPOSITORY: 'bitcr-devs-repo'
   IMAGE: 'chorus-relay'
-  GCR_INSTANCE: 'bitcr-cloud-run-02'
+  GCR_INSTANCE: 'bitcr-cloud-run-03'
 
 jobs:
   docker_build:
