@@ -46,3 +46,9 @@ user_hex_keys = [
   "f9f94d1fdc2090d46f3524807e3f58618c36988e69577d70d5d4d1e9e9645a4f", # zupzup 2
   "561ce865fa2e774cae30eddf2a2735395daf8acdfde1ad78c7da4fa86d52b4a8", # zupzup 3
 ]
+
+# Do not block ips
+enable_ip_blocking = false
+
+# Not sure how this works on subnets so setting this high for dev
+max_connections_per_ip = 500
