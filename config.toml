@@ -51,4 +51,4 @@ user_hex_keys = [
 enable_ip_blocking = false
 
 # Not sure how this works on subnets so setting this high for dev
-max_connections_per_ip = 5000
+max_connections_per_ip = 500
