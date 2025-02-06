@@ -22,7 +22,7 @@ hostname = "bitcr-cloud-run-03-550030097098.europe-west1.run.app"
 
 # I guess this one needs to be true if we have tls enabled via GCE
 # locally this fails bcs there is no RealIpHeader present
-chorus_is_behind_a_proxy = false
+chorus_is_behind_a_proxy = true
 
 # tls will be provided by GCE ?
 use_tls = false
