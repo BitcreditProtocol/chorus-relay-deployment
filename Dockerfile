@@ -6,7 +6,7 @@ FROM rust:latest AS rust-builder
 RUN update-ca-certificates
 
 # Pull a fork of chorus
-RUN git clone -b latest https://github.com/mikedilger/chorus.git
+RUN git clone -b latest https://github.com/BitcreditProtocol/chorus.git
 
 WORKDIR /chorus
 
